@@ -1,6 +1,6 @@
-# Multi-Agent Path Finding ![](https://img.shields.io/pypi/v/cbs-mapf) ![](https://img.shields.io/badge/python-%3E%3D3.5-blue) ![](https://img.shields.io/github/license/GavinPHR/Multi-Agent-Path-Finding) 
+# Multi-Agent Path Finding ![](https://img.shields.io/badge/python-%3E%3D3.5-blue) ![](https://img.shields.io/github/license/zijinoier/Multi-Agent-Path-Finding) 
 
-Anonymous Multi-Agent Path Finding (MAPF) with Conflict-Based Search (CBS) and Space-Time A* (STA*). I strongly recommend you to also check out my [Space-Time A*](https://github.com/GavinPHR/Space-Time-AStar) repository for a complete picture of how this package works.
+Anonymous Multi-Agent Path Finding (MAPF) with Conflict-Based Search (CBS) and Space-Time A* (STA*). I strongly recommend you to also check out the [Space-Time A*](https://github.com/GavinPHR/Space-Time-AStar) repository for a complete picture of how this package works.
 
  - [Visualization](#visualization)
  - [Installation](#installation)
@@ -12,16 +12,13 @@ Anonymous Multi-Agent Path Finding (MAPF) with Conflict-Based Search (CBS) and S
 ## Visualization 
 
 4 agents at the 4 corners of the map trying to align themselves in the middle:
+![](https://i.loli.net/2020/06/08/ZcF2gYiJKfDOPkH.gif)
 
-<p align="center">
-  <img width="500" src="https://raw.githubusercontent.com/GavinPHR/Multi-Agent-Path-Finding/master/fig/visualization1.gif">
-</p>
+
 
 16 agents in a circlular layout trying to form a grid layout:
 
-<p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/GavinPHR/Multi-Agent-Path-Finding/master/fig/visualization2.gif">
-</p>
+![](https://i.loli.net/2020/06/08/dFi2hWbYN6Lm1pT.gif)
 
 The above visualizations are generated using `visualizer.py` and scenario yaml files in the [visualization folder](https://github.com/GavinPHR/Multi-Agent-Path-Finding/tree/master/visualization). Once the package (and other [requirements](https://github.com/GavinPHR/Multi-Agent-Path-Finding/blob/master/visualization/requirements.txt)) is installed, you can generate them like so:
 
@@ -32,13 +29,25 @@ python3 visualizer.py scenario2.yaml
 
 ## Installation
 
-The package is named `cbs-mapf` and listed on [PyPI](https://pypi.org/project/cbs-mapf/). You can use the pip to install:
 
+Please  install its sister package `space-time-astar`, also on [GitHub](https://github.com/zijinoier/Space-Time-AStar). And put them under same folder.
 ```bash
-pip3 install cbs-mapf
-```
+├── cbs_mapf
+│   ├── cbs_mapf
+│   ├── fig
+│   ├── LICENSE.txt 
+│   ├── README.md
+│   ├── setup.py
+│   └── visualization
+├── stastar
+    ├── fig
+    ├── LICENSE.txt 
+    ├── README.md
+    ├── requirements.txt
+    ├── setup.py
+    └── stastar
 
-This will also install its sister package `space-time-astar`, also on [GitHub](https://github.com/GavinPHR/Space-Time-AStar) and [PyPI](https://pypi.org/project/space-time-astar/).
+```
 
 ## Usage
 

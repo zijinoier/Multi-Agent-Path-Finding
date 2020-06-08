@@ -11,8 +11,10 @@ import cv2
 import numpy as np
 import yaml
 
+import sys,os
+print(os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ))
+sys.path.insert(0, os.path.dirname( os.path.dirname( os.path.abspath(__file__) ) ))
 from cbs_mapf.planner import Planner
-
 
 class Simulator:
 
