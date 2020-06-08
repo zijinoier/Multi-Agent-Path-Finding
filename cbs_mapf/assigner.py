@@ -14,7 +14,7 @@ def min_cost(starts: List[Tuple[int, int]], goals: List[Tuple[int, int]]):
     # The number of start positions must be equal to the number of goal positions
     assert(len(starts) == len(goals))
 
-    sqdist = lambda x, y: (x[0]-y[0])**2 + (x[1]-y[1])**2
+    sqdist = lambda x, y: (x[0]-y[0])**2 + (x[1]-y[1])**2 #sqare distance
     cost_vec = []
     for start in starts:
         for goal in goals:

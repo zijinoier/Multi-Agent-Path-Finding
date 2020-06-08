@@ -2,6 +2,7 @@ __pycache__
 env/
 .ipynb_checkpoints/
 .idea/
+.vscode/
 dist/
 MANIFEST
 build/

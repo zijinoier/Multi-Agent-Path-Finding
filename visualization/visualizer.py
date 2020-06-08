@@ -5,6 +5,7 @@ Email: gavinsweden@gmail.com
 '''
 import time
 import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 from copy import deepcopy
 import cv2
 import numpy as np
